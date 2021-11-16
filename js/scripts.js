@@ -1,15 +1,15 @@
 var produtos = [];
 function adicionar(id, name, price) {
-    var prod = {};
+    var prod = { ''};
     prod.id = id;
     prod.name = name;
     prod.price = price;
 
     produtos = JSON.parse(window.localStorage.getItem("produtos"));
-    var prod = document.getElementById("produto").value;
     produtos.push(prod);
     window.localStorage.setItem("produtos", JSON.stringify(produtos));
     mostrar();
+    console.log(produtos);
 }
 
 function mostrar() {
