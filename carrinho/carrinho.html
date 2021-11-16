@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -31,7 +32,7 @@
                     <li><a href="../sobre/sobre.html">Sobre</a></li>
                     <li><a href="../contato/contato.html">Contato</a></li>
                     <li><a href="">Login</a></li>
-                    <li><a href="../carrinho/carrinho.html">Carrinho</a></li>
+                    <li><a href="../carrinho/carrinho.html" onclick="mostrar()">Carrinho</a></li>
 
                 </ul>
             </nav>
@@ -95,23 +96,24 @@
             </tr>
         </table>
 
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$2630,00</td>
-                </tr>
-                <tr>
-                    <td>Taxa</td>
-                    <td>$35,00</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$2665,00</td>
-                </tr>
-            </table>
-        </div>
+        <table mostrar(); </table>
 
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$2630,00</td>
+                    </tr>
+                    <tr>
+                        <td>Taxa</td>
+                        <td>$35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$2665,00</td>
+                    </tr>
+                </table>
+            </div>
     </div>
 
 
